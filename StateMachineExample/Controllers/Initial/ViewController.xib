@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="StateMachineExample" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="KX6-x7-2Pw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klW-CE-PbN">
+                    <rect key="frame" x="164.5" y="318" width="45" height="30"/>
+                    <state key="normal" title="LOGIN"/>
+                    <connections>
+                        <action selector="loginTapped:" destination="-1" eventType="touchUpInside" id="uaN-mU-bxx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxK-EL-1bk">
+                    <rect key="frame" x="159.5" y="356" width="56" height="30"/>
+                    <state key="normal" title="SIGNUP"/>
+                    <connections>
+                        <action selector="signupTapped:" destination="-1" eventType="touchUpInside" id="uf9-FP-Cqb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="klW-CE-PbN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XJf-X3-Mib"/>
+                <constraint firstItem="CxK-EL-1bk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z92-Qc-4Za"/>
+                <constraint firstItem="klW-CE-PbN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dbZ-iE-5hn"/>
+                <constraint firstItem="CxK-EL-1bk" firstAttribute="top" secondItem="klW-CE-PbN" secondAttribute="bottom" constant="8" id="nfj-Qo-mha"/>
+            </constraints>
+            <point key="canvasLocation" x="36.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
